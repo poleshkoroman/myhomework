@@ -1,5 +1,5 @@
 //calculator
-/*function calc(value_1, sign_, value_2)
+function calc(value_1, sign_, value_2)
 {
 	switch(sign)
 	{
@@ -21,7 +21,7 @@ if (!isNaN(value1))
 		if (!isNaN(value2)) alert(calc(value1,sign,value2));
 	  }
   }
-*/
+
 //balans skobok
 function check(str)
 {
