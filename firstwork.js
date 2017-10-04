@@ -1,5 +1,5 @@
 //calculator
-function calc(value_1, sign_, value_2)
+/*function calc(value_1, sign_, value_2)
 {
 	switch(sign)
 	{
@@ -38,4 +38,4 @@ function check(str)
 
 var mystr = prompt("Enter string.","test strign (( ))");
 if (check(mystr)) alert("Balans sobluden."); 
-	else alert("Balans ne sobluden.");
+	else alert("Balans ne sobluden.");*/
