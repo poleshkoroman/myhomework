@@ -1,0 +1,20 @@
+td, th {
+    background: purple; 
+    padding: 5px;
+   }
+ #false{
+  	background: #FF0000;
+  }
+
+ #true{
+  	background: #008000;
+  }
+
+#myDiv{
+    font-family: Courier;
+    color: purple;
+    font-size: 105px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 280px;
+}
