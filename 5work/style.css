@@ -1,16 +1,20 @@
+table{
+	color: white;
+}
+
 td, th {
     background: purple; 
-    padding: 5px;
+    padding: 10px;
    }
  #false{
-  	background: #FF0000;
+  	background: purple;
   }
 
  #true{
-  	background: #008000;
+  	background: green;
   }
 
-#myDiv{
+#myDiv2{
     font-family: Courier;
     color: purple;
     font-size: 105px;
