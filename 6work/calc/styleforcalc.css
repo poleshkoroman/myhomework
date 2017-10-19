@@ -1,0 +1,113 @@
+button {
+  border-radius:  7px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#9400D3), to(#800080));
+  color: white;
+  box-shadow:0 0 7px 1px #0c0b0b;
+  width:40px;
+  height:40px;
+  text-align:center;
+  vertical-align:center;
+  position:absolute;
+}
+
+#memory{
+  top:60px;
+  left:90px;
+}
+
+#mrc {
+  top:60px;
+  left:135px;
+}
+
+#clearinput{
+  top:60px;
+  left:45px;
+}
+
+#result {
+  top:60px;
+  left:180px;
+}
+
+#plus {
+  top:105px;
+  left:180px;
+}
+
+#minus {
+  top:150px;
+  left:180px;
+}
+
+#mult {
+  top:195px;
+  left:180px;
+}
+
+#divide {
+  top:240px;
+  left:180px;
+}
+
+input {
+  position:absolute;
+  top:20px;
+  left:53px;
+  color:white;
+  background:black;
+}
+
+.number{
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#cfcfcf));
+  color:purple;
+}
+
+.true{
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#cfcfcf), to(#9400d3));
+}
+
+.false{
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#9400D3), to(#800080));
+}
+
+#value1{
+  top:105px;
+  left:45px;
+}
+#value2{
+  top:105px;
+  left:90px;
+}
+#value3{
+  top:105px;
+  left:135px;
+}
+#value4{
+  top:150px;
+  left:45px;
+}
+#value5{
+  top:150px;
+  left:90px;
+}
+#value6{
+  top:150px;
+  left:135px;
+}
+#value7{
+  top:195px;
+  left:45px;
+}
+#value8{
+  top:195px;
+  left:90px;
+}
+#value9{
+  top:195px;
+  left:135px;
+}
+#value0{
+  top:240px;
+  left:90px;
+}
