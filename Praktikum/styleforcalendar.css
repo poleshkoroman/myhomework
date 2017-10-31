@@ -1,0 +1,73 @@
+td {
+  width: 7.1%;
+  height: 100px;
+  padding: 10px;
+  background: linear-gradient(to left, #ffffff, lightblue);
+}
+
+tr{
+	width: 100%;
+}
+
+.newevents{
+	background: linear-gradient(to right, #ffffff, #a527f2);
+}
+
+#addevents, #deleteevents{
+	position: absolute;
+  top: 530px;
+  left: 10px;
+}
+
+#withevents{
+	position: absolute;
+  top: 500px;
+  width: 205px;
+}
+
+#textarea {
+  position: absolute;
+  top: 440px;
+  width: 205px;
+  height: 50px;
+}
+
+.currentday {
+  background:  linear-gradient(to right, #ffffff, black);
+}
+
+#next, #previous, #show, #current, #month, #year{ 
+  position: absolute;
+  background: linear-gradient(to left, white, lightblue);
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 400px;
+}
+
+#current {
+  left:400px;
+}
+#previous {
+  left:290px;
+}
+#next {
+  left:480px;
+}
+#show {
+  left:200px;
+}
+#month{
+  left:5px;
+  display: block;
+}
+#year{
+  left:120px;
+}
+#close{
+  position: absolute;
+  top: 530px;
+  left: 150px;
+}
