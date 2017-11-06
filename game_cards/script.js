@@ -146,7 +146,7 @@ var createClickOnImage = function(numberofsteps, result){
 			}
 			var firstcard = arrTrue[0].parentNode.parentNode.children[1].childNodes[0];
 			var secondcard = arrTrue[1].parentNode.parentNode.children[1].childNodes[0]; 
-			if(firstcard.src == secondcard.src && firstcard.x != secondcard.x && firstcard.y != secondcard.y){
+			if(firstcard.src == secondcard.src && (firstcard.x != secondcard.x || firstcard.y != secondcard.y)){
 				setTimeout(function(){
 					firstcard.setAttribute("src","images/GALOCHKA.jpg");
 					secondcard.setAttribute("src","images/GALOCHKA.jpg");
