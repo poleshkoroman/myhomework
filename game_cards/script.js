@@ -7,8 +7,9 @@ var timer = document.getElementById("timer");
 var divcount = document.getElementById("count");
 var divaudio = document.getElementById("audio")
 var select = document.getElementsByTagName("select")[0];
-var table, RandomNumb = [], folder, timerId = 0, numberofhints, hours, minutes, seconds, numberofsteps, result, numberofhints1;
+var table, RandomNumb = [], folder, timerId = 0, numberofhints, hours, minutes, seconds, numberofsteps, result;
 var hint1 = document.getElementById("hint1");
+var counter;
 
 divaudio.style.left= newgame.getBoundingClientRect().width + hint1.getBoundingClientRect().width + hint.getBoundingClientRect().width + select.getBoundingClientRect().width + 30 + "px";
 
@@ -96,32 +97,37 @@ var createHint = function(numberofhints){
 	});
 }
 
-var createHint1 = function(numberofhints1){
-	hint1.addEventListener("click", function(e){
-		if (numberofhints1 > 0){
-			var arr = [];
-			var res = initRandomArray(12);
-			for(var i = 0; i < res.length; i++){
-				for(var a = 1; a < 48; a++)
-					if(document.getElementsByTagName("img")[a].getAttribute("src")=="images/"+select.value+"/"+arrayofimage[res[i]]) arr.push(a);
-				if (arr.length == 2)
-					break;
+hint1.addEventListener("click", function(){
+	if(counter>0){
+	var arr = [];
+	var res = initRandomArray(12);
+	for(var i = 0; i < res.length; i++){
+		console.log(arrayofimage[res[i]]);
+		for(var a = 1; a < 48; a++){
+			if(document.getElementsByTagName("img")[a].getAttribute("src")=="images/"+select.value+"/"+arrayofimage[res[i]]){
+				arr.push(a);
 			}
-		arr.forEach(function(elem){
-			document.getElementsByTagName("img")[elem].parentNode.parentNode.classList.add("light");
-		})
-		numberofhints1--;
-		setTimeout(function(){
-			arr.forEach(function(elem){
-			document.getElementsByTagName("img")[elem].parentNode.parentNode.classList.remove("light");
-		})
-			
 		}
-		, 3000);
-		hint1.lastChild.innerText = "Подсказка(" + numberofhints1 + ")";
+		if(arr.length==2)
+			break;
 	}
+
+	arr.forEach(function(elem){
+		document.getElementsByTagName("img")[elem].parentNode.parentNode.classList.add("light");
 	})
+	counter--;
+	setTimeout(function(){
+		arr.forEach(function(elem){
+		document.getElementsByTagName("img")[elem].parentNode.parentNode.classList.remove("light");
+	})
+		
+	}
+	, 3000);
+
+	hint1.lastChild.innerText = "Подсказка(" + counter + ")";
 }
+})
+
 var createClickOnImage = function(numberofsteps, result){
 	table.addEventListener("click", function(e){
 		if (e.target.getAttribute("src") == "images/GALOCHKA.jpg"){
@@ -182,14 +188,13 @@ var createGame = function(){
 	result = 0; 
 	numberofsteps = 0;
 	numberofhints = 3;
-	numberofhints1 = 3;
+	counter = 3;
 	hint.lastChild.innerText = "(" + numberofhints + ")";
-	hint1.lastChild.innerText = "Подсказка(" + numberofhints1 + ")";
+	hint1.lastChild.innerText = "Подсказка(" + counter + ")";
 	divcount.innerText = "Количество ходов: " + numberofsteps;
 	createTable();
 	createTimer();
 	createHint(numberofhints);
-	createHint1(numberofhints1);
 	createSound();
 	createClickOnImage(numberofsteps, result);
 }
@@ -203,8 +208,3 @@ newgame.addEventListener("click", function(){
 	}
 	
 })
-
-
-
-
-
