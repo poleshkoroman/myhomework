@@ -1,0 +1,60 @@
+.text {
+	position: absolute;
+	top: 80px;
+	left: 10px;
+	width: 98.5%;
+	height: 85%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background: white;
+}
+
+.format {
+	display: inline;
+}
+
+button {
+	margin-right: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+	background: linear-gradient(to right, lightgrey, white);
+	color: black;
+	outline: none;
+	border: 1px solid black;
+}
+
+select {
+	margin-right: 10px;
+}
+
+input {
+	margin-right: 10px;
+	background: linear-gradient(to right, lightgrey, white);
+}
+
+.color {
+	border: 0px;
+	width: 25px;
+}
+
+body {
+	background: linear-gradient(to right, purple, pink)
+}
+span {
+	color: lightgrey;
+}
+
+.press {
+	background: linear-gradient(to right, black, grey);
+	color: white;
+	border: 1px solid white;
+}
+
+.properties {
+	position: absolute;
+    top: 47px;
+    left: 10px;
+    color: black;
+}
