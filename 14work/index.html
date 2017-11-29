@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+		
+</head>
+<body>
+<div class = "visual">
+	<div class = "allmusic"></div>
+	<div class = "current"></div>
+	<div class = "move"></div>
+	<div class = "time"></div>
+</div>
+<div class = "functional">
+	<button type = "button" class = "play"><img src = "images/play.png"></button>
+	<button type = "button" class = "stop"><img src = 'images/stop.png'></button>
+	<input type = "range" min = "0" max = "100" step = "1" value = "50" class = "volume"> 
+	<button type = "button" class = "slow"><img src = 'images/slow.png'></button>
+	<button type = "button" class = "fast"><img src = 'images/fast.png'></button>
+	<button type = "button" class = "loop"><img src = 'images/loop.png'></button>
+</div>
+<div class = "playlist">
+	<ul></ul>
+</div>
+<audio class = "song"></audio>
+<script src='script.js'></script>
+</body>
+</html>

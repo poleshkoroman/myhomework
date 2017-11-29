@@ -1,0 +1,114 @@
+.visual {
+	background: black; 
+    width: 400px;
+    height: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    padding-left: 45px;
+
+}
+.functional {
+	display: inline;
+    top: 65px;
+    left: 7px;
+    position: absolute;
+    background: white;
+    padding: 14px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    padding-left: 31px;
+    padding-right: 32px;
+}
+.allmusic {
+	background: white;
+    width: 280px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 22px;
+}
+
+.move {
+    width: 280px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 22px;
+}
+
+.current {
+	background: lightgrey;
+    width: 0px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 22px;
+}
+
+.time {
+	position: absolute;
+    top: 22px;
+    left: 342px;
+    width: 79px;
+    height: 20px;
+    color: white;
+}
+
+.press {
+	border: 2px solid lightcoral;
+}
+
+img {
+	height: 30px;
+}
+
+button {
+	background: black;
+	border: 0px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.volume {
+	top: -7px;
+    position: relative;
+}
+.playlist {
+	position: absolute;
+    top: 142px;
+    left: 6px;
+    background: white;
+    width: 447px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+}
+
+li {
+    list-style-type: none;
+    background: linear-gradient(to right, grey, lightgrey);
+    padding-top: 29px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+
+ul {
+	padding-left: 7px;
+    padding-right: 7px;
+}
+
+.button-playlist {
+	position: relative;
+    left: 367px;
+    display: table;
+    top: -26px;
+}
+
+.currentaudio{
+	background: lightcoral;
+}
+
+.img-playlist {
+	height: 30px;
+    position: absolute;
+    right: 80px;
+}
+

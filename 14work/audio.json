@@ -1,0 +1,32 @@
+[
+	{
+		"name" : "Океан Эльзи - 911",
+		"image" : "images/okean.jpg",
+		"path" : "audio/audio1.mp3"
+	},
+	{
+		"name" : "Agnes Obel - The Curse",
+		"image" : "images/agnes.jpg",
+		"path" : "audio/audio2.mp3"
+	},
+	{
+		"name" : "Belly - Mumble Rap",
+		"image" : "images/belly.jpg",
+		"path" : "audio/audio3.mp3"
+	},
+	{
+		"name" : "Desiigner, BTS - MIC Drop",
+		"image" : "images/designer.jpg",
+		"path" : "audio/audio4.mp3"
+	},
+	{
+		"name" : "Lil Jon, The East Side Boyz - Get Low",
+		"image" : "images/liljon.jpg",
+		"path" : "audio/audio5.mp3"
+	},
+	{
+		"name" : "Logic, Rag'n'Bone Man - Broken People",
+		"image" : "images/logic.jpg",
+		"path" : "audio/audio6.mp3"
+	}	
+]
