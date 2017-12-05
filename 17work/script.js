@@ -2,7 +2,7 @@
 var context = canvas.getContext("2d");
 var butClear = document.getElementsByClassName("clear")[0];
 var x = window.pageX, y = window.pageY, xnew, ynew, key = 1;
-var lastopointX, lastopointY;
+var lastpointX, lastpointY;
 
 butClear.addEventListener("click", function(){
 	localStorage.clear();
@@ -11,18 +11,17 @@ butClear.addEventListener("click", function(){
 })
 
 window.onload = function(){
-	// console.log(localStorage.getItem(localStorage.length - 1), localStorage.getItem(localStorage.length));
 	while (localStorage.getItem(key)) {
-		// if (lastopointX == x && lastopointY == y) key = key + 2;
 		xnew = x;
 		ynew = y;
 		context.strokeStyle = "purple";
 		context.beginPath();
 		context.moveTo(xnew, ynew);
-		x = +localStorage.getItem(key); key++;
-		y = +localStorage.getItem(key); key++;
+		x = +localStorage.getItem(key); 
+		y = +localStorage.getItem(key + 1); 
 		context.lineTo(x, y);
 		context.stroke();
+		key += 2;
 	}
 }
 
@@ -43,8 +42,7 @@ canvas.addEventListener("mousedown", function(e){
 })
 
 canvas.addEventListener("mouseup", function(e){
-	// lastopointX = e.pageX, lastopointY = e.pageY;
-	// console.log(lastopointX, lastopointY);
+	localStorage.setItem(key, "end");
 	canvas.removeEventListener("mousemove", createLine);	
 })
 
